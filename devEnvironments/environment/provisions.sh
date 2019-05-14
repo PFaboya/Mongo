@@ -13,6 +13,8 @@ systemctl daemon-reload
 
 sudo systemctl start mongodb
 
-sudo systemctl enable mongodb
+netstat -plntu
 
-db.createUser({user:"admin", pwd:”password", roles:[{role:"root", db:"admin"}]})
+sudo systemctl status mongodb
+
+sudo systemctl enable mongodb
